@@ -1,0 +1,11 @@
+.area.wx-EOL5jgmZ {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.area > * {
+  flex: 0 0 320px;
+  margin: 20px;
+  padding: 10px 10px 0 10px;
+  border: 1px solid silver;
+}

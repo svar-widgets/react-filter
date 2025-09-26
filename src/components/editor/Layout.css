@@ -1,0 +1,33 @@
+.wx-filter-editor.wx-3z8r9Oys {
+  --wx-input-border: var(--wx-filter-border);
+}
+.wx-wrapper.wx-3z8r9Oys {
+  display: flex;
+  justify-content: right;
+  gap: 10px;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.wx-cell.wx-3z8r9Oys {
+  flex: 1;
+}
+
+.wx-list.wx-3z8r9Oys {
+  height: 150px;
+  overflow-y: auto;
+  margin: 8px 0;
+  border: var(--wx-filter-border);
+}
+
+.wx-item.wx-3z8r9Oys {
+  user-select: none;
+  padding: 8px 12px;
+  border-bottom: var(--wx-filter-border);
+}
+
+.wx-item label > span + span {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

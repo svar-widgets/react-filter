@@ -1,0 +1,28 @@
+.demo.wx-Q6e9nIo1 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.layout.wx-Q6e9nIo1 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  min-height: 600px;
+}
+.filter.wx-Q6e9nIo1 {
+  padding: 20px;
+  min-width: 360px;
+  flex: 0;
+}
+
+.filter-value.wx-Q6e9nIo1 {
+  flex: 1;
+  overflow-x: auto;
+  padding: 20px;
+}
+pre.wx-Q6e9nIo1 {
+  border: var(--wx-border);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 0;
+}

@@ -1,0 +1,19 @@
+.wx-hRQ2ERgk {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.layout.wx-hRQ2ERgk {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  min-height: 600px;
+}
+.filter.wx-hRQ2ERgk {
+  padding: 20px;
+  min-width: 360px;
+  flex: 0;
+}
+.list.wx-hRQ2ERgk {
+  flex: 1;
+}

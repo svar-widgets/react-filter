@@ -1,0 +1,31 @@
+.wx-filter-builder.wx-VDDi7d7g {
+  background-color: var(--wx-background);
+}
+.wx-filter-builder.wx-list.wx-VDDi7d7g {
+  padding: 0;
+  max-width: 470px;
+}
+
+/* line */
+.wx-button.wx-VDDi7d7g {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wx-toolbar.wx-line.wx-VDDi7d7g,
+.wx-toolbar.wx-simple.wx-VDDi7d7g {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  height: 67px;
+}
+
+.wx-toolbar.wx-line.wx-VDDi7d7g {
+  justify-content: space-between;
+}
+
+.wx-filters.wx-VDDi7d7g {
+  overflow-x: auto;
+  display: flex;
+}

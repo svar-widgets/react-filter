@@ -1,0 +1,10 @@
+.area.wx-lock {
+  margin: 20px;
+}
+
+.box.wx-lock {
+  max-width: 320px;
+  border: 1px solid silver;
+  padding: 10px;
+  margin-bottom: 20px;
+}

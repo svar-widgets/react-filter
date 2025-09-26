@@ -1,0 +1,15 @@
+.toolbar.wx-rT4L0AlM {
+  padding: 20px 10px 10px 20px;
+}
+.rows.wx-rT4L0AlM {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.qcell.wx-rT4L0AlM {
+  position: relative;
+  height: 100%;
+}

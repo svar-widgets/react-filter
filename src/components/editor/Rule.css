@@ -1,0 +1,55 @@
+.wx-rule.wx-5GeVl88l {
+  background: var(--wx-background-alt);
+  border-radius: var(--wx-border-radius);
+  white-space: nowrap;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.wx-rule.wx-list.wx-5GeVl88l {
+  padding: 12px 8px;
+  margin: 10px 0;
+}
+.wx-rule.wx-line.wx-5GeVl88l {
+  height: 36px;
+  padding: 8px;
+}
+
+.wx-field.wx-5GeVl88l {
+  font-weight: var(--wx-font-weight-md);
+}
+
+.wx-filter.wx-5GeVl88l {
+  display: inline-block;
+  max-width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 45px;
+}
+
+.wx-value.wx-5GeVl88l {
+  color: var(--wx-filter-value-color);
+}
+
+.wx-menu-icon.wx-5GeVl88l {
+  position: absolute;
+  right: 8px;
+  cursor: pointer;
+  width: var(--wx-line-height);
+  height: var(--wx-line-height);
+  line-height: var(--wx-line-height);
+  text-align: center;
+  border-radius: var(--wx-line-height);
+}
+
+.wx-menu-icon.wxi-dots-h.wx-5GeVl88l {
+  background: var(--wx-background);
+}
+
+.wx-menu-icon.wx-5GeVl88l:hover {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}

@@ -1,0 +1,19 @@
+.demo.wx-VUxJSFKA {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.layout.wx-VUxJSFKA {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  min-height: 600px;
+}
+.filter.wx-VUxJSFKA {
+  padding: 20px;
+  min-width: 420px;
+  flex: 0;
+}
+.list.wx-VUxJSFKA {
+  flex: 1;
+}

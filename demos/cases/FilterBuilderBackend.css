@@ -1,0 +1,19 @@
+.demo.wx-BOeTX3Jq {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.layout.wx-BOeTX3Jq {
+  display: flex;
+  flex-grow: 1;
+  min-height: 600px;
+  padding: 20px;
+  gap: 20px;
+}
+.filter.wx-BOeTX3Jq {
+  width: 320px;
+}
+.grid.wx-BOeTX3Jq {
+  width: calc(100% - 340px);
+  max-height: 100%;
+}

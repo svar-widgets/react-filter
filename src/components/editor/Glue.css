@@ -1,0 +1,26 @@
+.wx-glue.wx-XRdDajFX {
+  cursor: pointer;
+  border-radius: var(--wx-line-height);
+  display: inline-block;
+  line-height: var(--wx-line-height);
+  width: 40px;
+  text-align: center;
+  user-select: none;
+}
+
+.wx-glue.wx-XRdDajFX:hover {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+}
+
+.wx-and.wx-XRdDajFX {
+  background-color: var(--wx-filter-and-background);
+  color: var(--wx-filter-and-font-color);
+}
+
+.wx-or.wx-XRdDajFX {
+  background-color: var(--wx-filter-or-background);
+  color: var(--wx-filter-or-font-color);
+}

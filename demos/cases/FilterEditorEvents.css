@@ -1,0 +1,16 @@
+.toolbar.wx-aKC6Abp5 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.area.wx-aKC6Abp5 {
+  margin: 20px;
+}
+
+.box.wx-aKC6Abp5 {
+  max-width: 352px;
+  border: 1px solid silver;
+  padding: 10px;
+}

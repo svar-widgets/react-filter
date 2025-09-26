@@ -1,0 +1,46 @@
+.wx-group.wx-inner.wx-list.wx-3udP2tTA {
+  margin-left: 20px;
+  padding: 4px 0 0 8px;
+  border-left: var(--wx-border);
+}
+
+/* line */
+.wx-group.wx-inner.wx-line.wx-3udP2tTA:before,
+.wx-group.wx-inner.wx-line.wx-3udP2tTA:after {
+  content: '(';
+  margin: 0 2px 0 -4px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transform: scaleX(0.75);
+  font-size: 30px;
+  position: relative;
+  top: -2px;
+}
+.wx-group.wx-inner.wx-line.wx-3udP2tTA:after {
+  content: ')';
+  margin: 0 -4px 0 2px;
+}
+.wx-group.wx-line.wx-3udP2tTA {
+  display: flex;
+  gap: 10px;
+  padding: 4px;
+}
+
+.wx-line.wx-3udP2tTA .wx-rule-wrapper.wx-3udP2tTA,
+.wx-line.wx-3udP2tTA .wx-glue-wrapper.wx-3udP2tTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.wx-editor-wrapper.wx-3udP2tTA {
+  padding: 0 10px;
+  min-width: 280px;
+  max-width: 320px;
+}
+/*date picker within filter*/
+.wx-popup:has(.wx-editor-wrapper) {
+  overflow: visible !important;
+  position: absolute !important;
+}

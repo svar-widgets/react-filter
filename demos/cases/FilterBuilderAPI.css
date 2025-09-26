@@ -1,0 +1,24 @@
+.toolbar.wx-oploTRYQ {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px 10px 0px 20px;
+}
+.main.wx-oploTRYQ {
+  display: flex;
+}
+.filter.wx-oploTRYQ {
+  padding: 20px;
+  min-width: 420px;
+  flex: 0;
+}
+.filter-value.wx-oploTRYQ {
+  flex: 1;
+  overflow-x: auto;
+  padding: 20px;
+}
+pre.wx-oploTRYQ {
+  border: var(--wx-border);
+  border-radius: 6px;
+  padding: 10px;
+  margin: 0;
+}
