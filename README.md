@@ -30,9 +30,11 @@
 
 SVAR React Filter library includes the following components:
 
--   **FilterBuilder** - the main component that provides an interactive interface for building complex queries and filtering large datasets.
--   **FilterEditor** - allows you to create a filtering rule for a single field, and can be used as a standalone component.
--   **FilterBar** - a simplified filter bar UI with inputs and select controls. It allows building filtering rules for several fields and combining them with logical operators. Can be used above data tables or dashboards.
+**FilterBuilder** is the main component that provides an interactive interface for building complex queries and filtering large datasets.
+
+**FilterEditor** allows you to create a filtering rule for a single field, and can be used as a standalone component.
+
+**FilterBar** is simplified filter bar UI with inputs and select controls. It allows building filtering rules for several fields and combining them with logical operators. Can be used above data tables or dashboards.
 
 ### :sparkles: Key features:
 
@@ -43,6 +45,7 @@ SVAR React Filter library includes the following components:
 -   Dynamic loading: filter options can be loaded on demand when a new filter is added.
 -   JSON output: the component outputs structured JSON that can be transformed into SQL or other query formats.
 -   Intuitive, straightforward API: easily set and retrieve values, customize filters, and track changes.
+-   Full TypeScript support and compatibility with React 18 and 19. 
 
 [Check out the demos](https://docs.svar.dev/react/filter/samples/) to see all SVAR React Filter features in action.
 
