@@ -58,8 +58,37 @@ export default function FilterBuilderBackend() {
         </div>
         <div className="wx-BOeTX3Jq grid">
           {/* <Grid data={data} columns={columns} /> */}
-          <div>Grid is not published yet</div>
-          {data}
+          {data.length
+            ? <table className="wx-demo-table">
+              <thead className="wx-demo-header-row">
+                <tr>
+                  <th className="wx-demo-header">First Name</th>
+                  <th className="wx-demo-header">Last Name</th>
+                  <th className="wx-demo-header">Age</th>
+                  <th className="wx-demo-header">Birth Date</th>
+                  <th className="wx-demo-header">Country</th>
+                  <th className="wx-demo-header">City</th>
+                  <th className="wx-demo-header">Job</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                {data.map((person) => (
+                  <tr
+                    key={person.id}
+                  >
+                    <td className="wx-demo-cell">{person.first_name}</td>
+                    <td className="wx-demo-cell">{person.last_name}</td>
+                    <td className="wx-demo-cell">{person.age}</td>
+                    <td className="wx-demo-cell">{new Date(person.birthdate).toLocaleDateString()}</td>
+                    <td className="wx-demo-cell">{person.country}</td>
+                    <td className="wx-demo-cell">{person.city}</td>
+                    <td className="wx-demo-cell">{person.job}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            : null}
         </div>
       </div>
     </div>

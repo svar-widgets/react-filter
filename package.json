@@ -1,7 +1,7 @@
 {
   "name": "@svar-ui/react-filter",
-  "version": "2.3.0",
-  "description": "SVAR React Filter is a React library for adding filter bars and intuitive query builders with JSON output.",
+  "version": "2.3.1",
+  "description": "SVAR React Filter is an advanced query builder for React, with AND/OR logic, nested filter groups, and JSON output.",
   "productTag": "filter",
   "type": "module",
   "keywords": [
@@ -11,10 +11,11 @@
     "react-component",
     "react-filter",
     "ui-components",
-    "context-menu",
     "ui",
-    "menu",
-    "svar-react"
+    "svar-react",
+    "query-builder",
+    "query builder",
+    "query"
   ],
   "license": "MIT",
   "scripts": {
@@ -29,7 +30,7 @@
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./types/index.d.ts",
       "import": "./dist/index.es.js",
       "require": "./dist/index.cjs.js",
       "default": "./dist/index.es.js"
@@ -57,8 +58,8 @@
     "@svar-ui/lib-dom": "0.9.2",
     "@svar-ui/lib-react": "1.1.1",
     "@svar-ui/lib-state": "1.9.6",
-    "@svar-ui/react-core": "2.3.0",
-    "@svar-ui/react-menu": "2.3.0"
+    "@svar-ui/react-core": "2.3.1",
+    "@svar-ui/react-menu": "2.3.1"
   },
   "homepage": "https://svar.dev/react/filter/",
   "repository": {
