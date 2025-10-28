@@ -38,17 +38,16 @@ SVAR React Filter library includes the following components:
 
 ### :sparkles: Key features:
 
--   Complex filter queries: multi-field rules, groups of filters, nested filters, AND/OR logic.
--   Multiple data types: text, number, and date filtering with type-specific operators.
--   Configurable layouts: vertical, horizontal, or minimal filter bar layouts.
--   Localization: labels and date formats can be customized to match users' locale.
--   Dynamic loading: filter options can be loaded on demand when a new filter is added.
--   JSON output: the component outputs structured JSON that can be transformed into SQL or other query formats.
--   Intuitive, straightforward API: easily set and retrieve values, customize filters, and track changes.
--   Full TypeScript support and compatibility with React 18 and 19.
+- Complex filter queries: multi-field rules, groups of filters, nested filters, AND/OR logic.
+- Multiple data types: text, number, and date filtering with type-specific operators.
+- Configurable layouts: vertical, horizontal, or minimal filter bar layouts.
+- Localization: labels and date formats can be customized to match users' locale.
+- Dynamic loading: filter options can be loaded on demand when a new filter is added.
+- JSON output: the component outputs structured JSON that can be transformed into SQL or other query formats.
+- Intuitive, straightforward API: easily set and retrieve values, customize filters, and track changes.
+- Full TypeScript support and compatibility with React 18 and 19.
 
 [Check out the demos](https://docs.svar.dev/react/filter/samples/) to see all SVAR React Filter features in action.
-
 
 ### :hammer_and_wrench: How to Use
 

@@ -3,7 +3,7 @@ import './Willow.css';
 
 function Willow({ fonts = true, children }) {
   return children ? (
-    <CoreWillow fonts={fonts}>{children()}</CoreWillow>
+    <CoreWillow fonts={fonts}>{children}</CoreWillow>
   ) : (
     <CoreWillow fonts={fonts} />
   );
