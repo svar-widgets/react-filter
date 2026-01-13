@@ -10,7 +10,7 @@ export default function FilterBuilderBackend() {
     () => getData(),
     [],
   );
-  const server = 'https://master--svar-query-go--dev.webix.io/api/data/persons';
+  const server = 'https://query-backend.svar.dev/api/data/persons';
 
   const [data, setData] = useState([]);
 
