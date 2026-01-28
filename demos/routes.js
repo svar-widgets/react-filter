@@ -6,7 +6,7 @@ import FilterBuilderDates from './cases/FilterBuilderDates.jsx';
 import FilterBuilderAPI from './cases/FilterBuilderAPI.jsx';
 import FilterBuilderLocales from './cases/FilterBuilderLocales.jsx';
 import FilterBuilderConvertDates from './cases/FilterBuilderConvertDates.jsx';
-import FilterBuilderBackend from './cases/FilterBuilderBackend.jsx';
+//import FilterBuilderBackend from './cases/FilterBuilderBackend.jsx';
 import FilterEditorBasic from './cases/FilterEditorBasic.jsx';
 import FilterEditorEvents from './cases/FilterEditorEvents.jsx';
 import FilterEditorFields from './cases/FilterEditorFields.jsx';
@@ -65,12 +65,12 @@ export const links = [
     FilterBuilderConvertDates,
     'FilterBuilderConvertDates',
   ],
-  [
-    '/filter-builder-backend/:skin',
-    'Filter Builder: backend',
-    FilterBuilderBackend,
-    'FilterBuilderBackend',
-  ],
+  // [
+  //   '/filter-builder-backend/:skin',
+  //   'Filter Builder: backend',
+  //   FilterBuilderBackend,
+  //   'FilterBuilderBackend',
+  // ],
   [
     '/filter-editor-base/:skin',
     'Basic Filter Editor',

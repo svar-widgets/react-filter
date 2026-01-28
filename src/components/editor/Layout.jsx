@@ -7,10 +7,10 @@ import {
   Checkbox,
   DateRangePicker,
   Combo,
+  context
 } from '@svar-ui/react-core';
 import { getFilters, getFilter } from '@svar-ui/filter-store';
 import { dateToString } from '@svar-ui/lib-dom';
-import { context } from '@svar-ui/react-core';
 import './Layout.css';
 
 export default function Layout(props) {
@@ -393,78 +393,80 @@ export default function Layout(props) {
   }, []);
 
   return (
-    <div className="wx-3z8r9Oys wx-filter-editor">
-      {fields && fieldsSelector ? (
-        <RichSelect onChange={changeField} options={fields} value={_field} />
-      ) : null}
-      <div className="wx-3z8r9Oys wx-wrapper">
-        <div className="wx-3z8r9Oys wx-cell">
-          <RichSelect
-            onChange={changeFilter}
-            options={rules}
-            value={_filter}
-            placeholder={_('Click to select')}
-          />
-        </div>
-        <div className="wx-3z8r9Oys wx-cell" ref={inputRef}>
-          {_type === 'date' ? (
-            _filter == 'between' || _filter == 'notBetween' ? (
-              <DateRangePicker
-                format={f}
-                value={_value}
-                buttons={['done', 'clear', 'today']}
-                onChange={changeValue}
-              />
-            ) : (
-              <DatePicker format={f} value={_value} onChange={changeValue} />
-            )
-          ) : _type === 'number' ? (
-            <Text value={_value} onChange={changeValue} type="number" />
-          ) : _type === 'tuple' ? (
-            <Combo
-              value={_value}
-              options={getComboOptions(_options)}
-              onChange={changeValue}
-            >
-              {({ option }) => option.emptyLabel || option.label}
-            </Combo>
-          ) : (
-            <Text value={_value} onChange={changeValue} />
-          )}
-        </div>
-      </div>
-
-      <Button onClick={toggleAll}>
-        {allSelected ? _('Unselect all') : _('Select all')}
-      </Button>
-      <div className="wx-3z8r9Oys wx-list" role="listbox">
-        {visibleValues.map((option, i) => (
-          <div
-            className="wx-3z8r9Oys wx-item"
-            tabIndex={i ? -1 : 0}
-            role="option"
-            key={i}
-          >
-            <Checkbox
-              label={getLabel(option)}
-              inputValue={option}
-              value={_includes && _includes.includes(option)}
-              onChange={handleChange}
+    <context.fieldId.Provider value={null}>
+      <div className="wx-3z8r9Oys wx-filter-editor">
+        {fields && fieldsSelector ? (
+          <RichSelect onChange={changeField} options={fields} value={_field} />
+        ) : null}
+        <div className="wx-3z8r9Oys wx-wrapper">
+          <div className="wx-3z8r9Oys wx-cell">
+            <RichSelect
+              onChange={changeFilter}
+              options={rules}
+              value={_filter}
+              placeholder={_('Click to select')}
             />
           </div>
-        ))}
-      </div>
-
-      {buttons ? (
-        <div className="wx-3z8r9Oys wx-wrapper">
-          <Button type={'secondary'} onClick={doCancel}>
-            {_('Cancel')}
-          </Button>
-          <Button type={'primary'} onClick={doApply}>
-            {_('Apply')}
-          </Button>
+          <div className="wx-3z8r9Oys wx-cell" ref={inputRef}>
+            {_type === 'date' ? (
+              _filter == 'between' || _filter == 'notBetween' ? (
+                <DateRangePicker
+                  format={f}
+                  value={_value}
+                  buttons={['done', 'clear', 'today']}
+                  onChange={changeValue}
+                />
+              ) : (
+                <DatePicker format={f} value={_value} onChange={changeValue} />
+              )
+            ) : _type === 'number' ? (
+              <Text value={_value} onChange={changeValue} type="number" />
+            ) : _type === 'tuple' ? (
+              <Combo
+                value={_value}
+                options={getComboOptions(_options)}
+                onChange={changeValue}
+              >
+                {({ option }) => option.emptyLabel || option.label}
+              </Combo>
+            ) : (
+              <Text value={_value} onChange={changeValue} />
+            )}
+          </div>
         </div>
-      ) : null}
-    </div>
+
+        <Button onClick={toggleAll}>
+          {allSelected ? _('Unselect all') : _('Select all')}
+        </Button>
+        <div className="wx-3z8r9Oys wx-list" role="listbox">
+          {visibleValues.map((option, i) => (
+            <div
+              className="wx-3z8r9Oys wx-item"
+              tabIndex={i ? -1 : 0}
+              role="option"
+              key={i}
+            >
+              <Checkbox
+                label={getLabel(option)}
+                inputValue={option}
+                value={_includes && _includes.includes(option)}
+                onChange={handleChange}
+              />
+            </div>
+          ))}
+        </div>
+
+        {buttons ? (
+          <div className="wx-3z8r9Oys wx-wrapper">
+            <Button type={'secondary'} onClick={doCancel}>
+              {_('Cancel')}
+            </Button>
+            <Button type={'primary'} onClick={doApply}>
+              {_('Apply')}
+            </Button>
+          </div>
+        ) : null}
+      </div>
+    </context.fieldId.Provider>
   );
 }
