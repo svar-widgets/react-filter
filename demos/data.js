@@ -69,6 +69,11 @@ export function getData() {
       label: 'End Date',
       type: 'date',
     },
+    {
+      id: 'status',
+      label: 'Status',
+      type: 'text',
+    },
   ];
 
   const values = [
@@ -90,7 +95,7 @@ export function getData() {
       'Rachel',
       'Willi',
     ],
-    last_name: ['Wonski', 'Kareki', 'Smith', 'Bounce', 'Wane', 'Wane', 'Wong'],
+    last_name: ['Wonski', 'Kareki', 'Smith', 'Bounce', 'Wane'],
     age: [24, 26, 33, 35, 44, 45, 62],
     country: ['USA', 'China', 'Germany'],
     start: [
@@ -115,67 +120,67 @@ export function getData() {
 
   const data = [
     {
-      id: 1,
       first_name: 'Alex',
       last_name: 'Wonski',
       country: 'USA',
       age: 26,
       start: new Date(2025, 0, 3),
       end: new Date(2025, 0, 10),
+      status: 'review',
     },
     {
-      id: 2,
       first_name: 'Alex',
       last_name: 'Kareki',
       country: 'Germany',
       age: 45,
       start: new Date(2025, 2, 13),
       end: new Date(2025, 2, 20),
+      status: 'urgent',
     },
     {
-      id: 3,
       first_name: 'Agata',
       last_name: 'Smith',
       country: 'USA',
       age: 35,
       start: new Date(2025, 2, 8),
       end: new Date(2025, 2, 15),
+      status: 'done',
     },
     {
-      id: 4,
       first_name: 'Daisy',
       last_name: 'Bounce',
       country: 'Germany',
       age: 33,
       start: new Date(2024, 11, 4),
       end: new Date(2024, 11, 11),
+      status: 'review',
     },
     {
-      id: 5,
       first_name: 'John',
       last_name: 'Wane',
       country: 'USA',
       age: 24,
       start: new Date(2025, 1, 1),
       end: new Date(2025, 1, 8),
+      status: 'done',
     },
     {
-      id: 6,
       first_name: 'Jane',
       last_name: 'Wane',
       country: 'USA',
       age: 44,
       start: new Date(2024, 9, 2),
       end: new Date(2024, 9, 9),
+      status: 'review',
     },
     {
-      id: 7,
       first_name: 'Willi',
       last_name: 'Wong',
       country: 'China',
       age: 62,
       start: new Date(2025, 1, 22),
       end: new Date(2025, 1, 29),
+      status: 'urgent',
     },
   ];
 

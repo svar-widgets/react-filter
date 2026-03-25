@@ -99,7 +99,7 @@ function List(props) {
       >
         {filters.map((rule, i) => (
           <Fragment key={rule.id}>
-            {type === 'list' && editorState && editorState.id == rule.id ? (
+            {type === 'list' && editorState && editorState.id === rule.id ? (
               <Panel rule={rule} />
             ) : rule.data ? (
               <List type={type} group={rule} onShowMenu={onShowMenu} />

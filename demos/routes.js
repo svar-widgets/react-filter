@@ -6,7 +6,10 @@ import FilterBuilderDates from './cases/FilterBuilderDates.jsx';
 import FilterBuilderAPI from './cases/FilterBuilderAPI.jsx';
 import FilterBuilderLocales from './cases/FilterBuilderLocales.jsx';
 import FilterBuilderConvertDates from './cases/FilterBuilderConvertDates.jsx';
-//import FilterBuilderBackend from './cases/FilterBuilderBackend.jsx';
+import FilterBuilderBackend from './cases/FilterBuilderBackend.jsx';
+import FilterQuery from './cases/FilterQuery.jsx';
+import FilterQueryMixed from './cases/FilterQueryMixed.jsx';
+import FilterQueryNaturalText from './cases/FilterQueryNaturalText.jsx';
 import FilterEditorBasic from './cases/FilterEditorBasic.jsx';
 import FilterEditorEvents from './cases/FilterEditorEvents.jsx';
 import FilterEditorFields from './cases/FilterEditorFields.jsx';
@@ -65,12 +68,30 @@ export const links = [
     FilterBuilderConvertDates,
     'FilterBuilderConvertDates',
   ],
-  // [
-  //   '/filter-builder-backend/:skin',
-  //   'Filter Builder: backend',
-  //   FilterBuilderBackend,
-  //   'FilterBuilderBackend',
-  // ],
+  [
+    '/filter-builder-backend/:skin',
+    'Filter Builder: backend',
+    FilterBuilderBackend,
+    'FilterBuilderBackend',
+  ],
+  [
+    '/filter-query-query/:skin',
+    'Filter Query: query syntax',
+    FilterQuery,
+    'FilterQuery',
+  ],
+  [
+    '/filter-query-natural-text/:skin',
+    'Filter Query: natural text',
+    FilterQueryNaturalText,
+    'FilterQueryNaturalText',
+  ],
+  [
+    '/filter-query-mixed/:skin',
+    'Filter Query: mixed',
+    FilterQueryMixed,
+    'FilterQueryMixed',
+  ],
   [
     '/filter-editor-base/:skin',
     'Basic Filter Editor',

@@ -1,0 +1,34 @@
+.demo.wx-aadJJBh7 {
+  display: flex;
+  flex-direction: column;
+}
+
+.natural-input.wx-aadJJBh7 {
+  padding: 20px;
+}
+
+.hint.wx-aadJJBh7 {
+  margin: 12px 0 8px 0;
+  font-size: 14px;
+}
+
+.examples.wx-aadJJBh7 {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.examples.wx-aadJJBh7 li {
+  margin: 4px 0;
+}
+
+.layout.wx-aadJJBh7 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  min-height: 600px;
+}
+
+.list.wx-aadJJBh7 {
+  flex: 1;
+}

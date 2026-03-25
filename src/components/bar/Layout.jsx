@@ -103,9 +103,8 @@ function Layout(props) {
         const currentField = field.by.find((fItem) => fItem.id === base.field);
         if (currentField) {
           base = {
-            ...currentField,
             ...base,
-            placeholder: currentField.placeholder ?? base.placeholder,
+            ...currentField,
           };
         }
       } else if (field.type !== 'all') {

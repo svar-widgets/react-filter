@@ -1,4 +1,4 @@
-:global(.wx-willow-dark-theme) {
+.wx-willow-dark-theme {
   color-scheme: dark;
 
   --wx-filter-value-color: #ac9eff;

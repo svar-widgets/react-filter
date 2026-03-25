@@ -1,0 +1,34 @@
+.demo.wx-aabtU8Io {
+  display: flex;
+  flex-direction: column;
+}
+
+.natural-input.wx-aabtU8Io {
+  padding: 20px;
+}
+
+.hint.wx-aabtU8Io {
+  margin: 12px 0 8px 0;
+  font-size: var(--wx-font-size);
+}
+
+.examples.wx-aabtU8Io {
+  margin: 0;
+  padding-left: 20px;
+  font-size: var(--wx-font-size-sm);
+}
+
+.examples.wx-aabtU8Io li {
+  margin: 4px 0;
+}
+
+.layout.wx-aabtU8Io {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  min-height: 600px;
+}
+
+.list.wx-aabtU8Io {
+  flex: 1;
+}

@@ -1,0 +1,128 @@
+.wx-filter-query.wx-aaccSW8j {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wx-progress-bar.wx-aaccSW8j {
+  width: 100%;
+  height: 3px;
+  border-radius: 2px 2px 0 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wx-progress-bar.active.wx-aaccSW8j {
+  background: var(--wx-background-alt);
+}
+
+.wx-progress-fill.wx-aaccSW8j {
+  height: 100%;
+  background: var(--wx-color-primary);
+  animation: wx-fill-progress 3000ms linear forwards;
+}
+
+@keyframes wx-fill-progress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+    background: var(--wx-color-success);
+  }
+}
+
+.wx-filter-query-row.wx-aaccSW8j {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: var(--wx-border);
+  border-radius: var(--wx-border-radius);
+  background: var(--wx-background);
+  overflow: hidden;
+}
+
+.wx-filter-query-input-wrapper.wx-aaccSW8j {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.wx-filter-query-highlight.wx-aaccSW8j {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 6px 12px;
+  white-space: pre;
+  overflow-x: auto;
+  pointer-events: none;
+  scrollbar-width: none;
+}
+
+.wx-filter-query-highlight.wx-aaccSW8j::-webkit-scrollbar {
+  display: none;
+}
+
+.wx-filter-query-input.wx-aaccSW8j {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: var(--wx-padding) 12px;
+  white-space: pre;
+  background: transparent;
+  color: var(--wx-color-font);
+  font-size: var(--wx-font-size);
+  font-family: var(--wx-font-family);
+}
+
+.wx-filter-query-input.wx-parse-mode.wx-aaccSW8j {
+  color: transparent;
+  caret-color: var(--wx-color-font);
+  position: relative;
+}
+
+.wx-filter-query-input.wx-aaccSW8j::placeholder {
+  color: var(--wx-color-font-alt);
+}
+
+.wx-filter-query-highlight.wx-placeholder.wx-aaccSW8j {
+  color: var(--wx-color-font-alt);
+}
+
+.wx-filter-query-clear.wx-aaccSW8j {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: var(--wx-padding);
+  color: var(--wx-color-font-alt);
+}
+
+.wx-filter-query-clear.wx-aaccSW8j:hover {
+  color: var(--wx-color-font);
+}
+
+.wx-filter-query-search.wx-aaccSW8j {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-left: var(--wx-border);
+  border-radius: var(--wx-border-radius);
+  margin: 2px;
+  background: var(--wx-color-primary);
+  cursor: pointer;
+  padding: 6px 12px;
+  color: var(--wx-color-primary-font);
+  position: relative;
+}
+
+.wx-filter-query-search.wx-aaccSW8j:hover {
+  background: color-mix(in srgb, var(--wx-color-primary) 90%, black);
+}

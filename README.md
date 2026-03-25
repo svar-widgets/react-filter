@@ -18,7 +18,7 @@
 
 </div>
 
-[SVAR React Filter](https://svar.dev/react/filter/) is a library of three React components that help you add flexible filtering features to your apps: from simple filter bars to advanced query builders. It provides an intuitive UI for creating and editing filtering rules, grouping filters, defining conditions, and choosing the logic (AND/OR).
+[SVAR React Filter](https://svar.dev/react/filter/) is a library of four React components that help you add flexible filtering features to your apps: from simple filter bars to advanced query builders. It provides an intuitive UI for creating and editing filtering rules, grouping filters, defining conditions, and choosing the logic (AND/OR).
 
 <div align="center">
 	
@@ -30,16 +30,18 @@
 
 SVAR React Filter library includes the following components:
 
-**FilterBuilder** is the main component that provides an interactive interface for building complex queries and filtering large datasets.
+- **FilterBuilder** - the main component that provides an interactive interface for building complex queries and filtering large datasets.
+- **FilterEditor** - allows you to create a filtering rule for a single field, and can be used as a standalone component.
+- **FilterBar** - a simplified filter bar UI with inputs and select controls. It allows building filtering rules for several fields and combining them with logical operators. Can be used above data tables or dashboards.
+- **FilterQuery** - a YouTrack-style search input that accepts structured queries (`Status: Open and Age: >30`), natural language (`show all users older than 30`), or both in mixed mode. 
 
-**FilterEditor** allows you to create a filtering rule for a single field, and can be used as a standalone component.
-
-**FilterBar** is a simplified filter bar UI with inputs and select controls. It allows building filtering rules for several fields and combining them with logical operators. Can be used above data tables or dashboards.
 
 ### :sparkles: Key features:
 
 - Complex filter queries: multi-field rules, groups of filters, nested filters, AND/OR logic.
 - Multiple data types: text, number, and date filtering with type-specific operators.
+- AI-powered natural language filtering: convert conversational queries into structured filters.
+- Query syntax with autocomplete: real-time syntax highlighting, field and value suggestions, and validation.
 - Configurable layouts: vertical, horizontal, or minimal filter bar layouts.
 - Localization: labels and date formats can be customized to match users' locale.
 - Dynamic loading: filter options can be loaded on demand when a new filter is added.

@@ -1,4 +1,9 @@
-import type { FC, ReactNode } from 'react';
+import type {
+  FC,
+  ReactNode,
+  ForwardRefExoticComponent,
+  RefAttributes,
+} from 'react';
 
 import type {
   IFilterSet,
@@ -16,12 +21,13 @@ import type {
 
 export * from '@svar-ui/filter-store';
 
-export declare const FilterBuilder: FC<
+export declare const FilterBuilder: ForwardRefExoticComponent<
   {
     type?: 'list' | 'line' | 'simple';
     init?: (api: IApi) => void;
   } & IConfig &
-    FilterBuilderActions<TMethodsConfig>
+    FilterBuilderActions<TMethodsConfig> &
+    RefAttributes<IApi>
 >;
 
 export declare const FilterEditor: FC<{
@@ -39,6 +45,39 @@ export declare const FilterEditor: FC<{
   onApply?: (ev: { value: IFilter }) => void;
   onCancel?: (ev: { value: IFilter }) => void;
   onChange?: (ev: { value: IFilter }) => void;
+}>;
+
+export declare const FilterQuery: FC<{
+  value?: string;
+  placeholder?: string;
+  parse?: boolean;
+  fields?: IConfig['fields'];
+  options?: TSingleOptions;
+  locale?: Record<string, (...args: any[]) => string>;
+  strictParser?: boolean;
+  onChange?: (ev: {
+    parsed?: any;
+    value: any;
+    text: string;
+    error?: {
+      code: string;
+      field?: string;
+      value?: any;
+      message?: string;
+    } | null;
+    startProgress: () => void;
+    endProgress: () => void;
+  }) => void;
+}>;
+
+export declare const QueryHighlight: FC<{
+  query?: string;
+  fields?: IConfig['fields'];
+  options?: TSingleOptions;
+  inline?: boolean;
+  showErrors?: boolean | number;
+  cursorPos?: number;
+  strictParser?: boolean;
 }>;
 
 export declare const FilterBar: FC<{

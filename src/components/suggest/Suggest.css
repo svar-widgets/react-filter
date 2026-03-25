@@ -1,0 +1,21 @@
+.wx-list.wx-aac97azI {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.wx-item.wx-aac97azI {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-family: var(--wx-input-font-family);
+  font-size: var(--wx-input-font-size);
+  line-height: var(--wx-input-line-height);
+  font-weight: var(--wx-input-font-weight);
+  color: var(--wx-input-font-color);
+  padding: var(--wx-input-padding);
+  cursor: pointer;
+}
+
+.wx-item.wx-aac97azI.wx-focus {
+  background: var(--wx-background-hover);
+}

@@ -1,6 +1,6 @@
 {
   "name": "@svar-ui/react-filter",
-  "version": "2.4.3",
+  "version": "2.5.0",
   "description": "SVAR React Filter is an advanced query builder for React, with AND/OR logic, nested filter groups, and JSON output.",
   "productTag": "filter",
   "type": "module",
@@ -53,13 +53,13 @@
     "react-dom": ">=18"
   },
   "dependencies": {
-    "@svar-ui/filter-locales": "2.4.0",
-    "@svar-ui/filter-store": "2.4.0",
-    "@svar-ui/lib-dom": "0.11.1",
-    "@svar-ui/lib-react": "1.2.2",
+    "@svar-ui/filter-locales": "2.5.0",
+    "@svar-ui/filter-store": "2.5.0",
+    "@svar-ui/lib-dom": "0.12.1",
+    "@svar-ui/lib-react": "1.3.0",
     "@svar-ui/lib-state": "1.9.6",
-    "@svar-ui/react-core": "2.4.3",
-    "@svar-ui/react-menu": "2.4.3"
+    "@svar-ui/react-core": "2.5.0",
+    "@svar-ui/react-menu": "2.5.0"
   },
   "homepage": "https://svar.dev/react/filter/",
   "repository": {
