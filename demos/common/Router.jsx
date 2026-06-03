@@ -25,7 +25,7 @@ export default function Router({ onRouteChange }) {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/base/willow" replace />} />
-      {links.map(([path, , Component]) => (
+      {links.filter(Array.isArray).map(([path, , Component]) => (
         <Route key={path} path={path} element={<Component />} />
       ))}
     </Routes>

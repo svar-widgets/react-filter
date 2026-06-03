@@ -20,6 +20,7 @@ import FilterBarCombined from './cases/FilterBarCombined.jsx';
 import FilterBarDates from './cases/FilterBarDates.jsx';
 
 export const links = [
+  { group: 'Filter Builder' },
   [
     '/base/:skin',
     'Basic Filter Builder',
@@ -74,6 +75,7 @@ export const links = [
     FilterBuilderBackend,
     'FilterBuilderBackend',
   ],
+  { group: 'Filter Query' },
   [
     '/filter-query-query/:skin',
     'Filter Query: query syntax',
@@ -92,6 +94,7 @@ export const links = [
     FilterQueryMixed,
     'FilterQueryMixed',
   ],
+  { group: 'Filter Editor' },
   [
     '/filter-editor-base/:skin',
     'Basic Filter Editor',
@@ -122,6 +125,7 @@ export const links = [
     FilterEditorOptions,
     'FilterEditorOptions',
   ],
+  { group: 'Filter Bar' },
   ['/filter-bar/:skin', 'Basic Filter Bar', FilterBar, 'FilterBar'],
   [
     '/filter-bar-combined/:skin',

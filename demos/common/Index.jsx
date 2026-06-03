@@ -80,7 +80,7 @@ function DemoExplorerContent({
 
   return (
     <div
-      className={`wx-demos wx-willow-theme layout ${show ? 'active' : ''}${isMobileView ? ' narrow' : ''}`}
+      className={`wx-demos wx-${skin}-theme layout ${show ? 'active' : ''}${isMobileView ? ' narrow' : ''}`}
     >
       <div
         className={`wx-demos sidebar ${show ? 'active' : ''}`}
@@ -115,14 +115,20 @@ function DemoExplorerContent({
             </div>
           </div>
           <div className="wx-demos box-links">
-            {links.map((data) => (
-              <Link
-                key={data[0]}
-                data={data}
-                skin={skin}
-                onClick={() => isMobileView && setShow(false)}
-              />
-            ))}
+            {links.map((data, i) =>
+              Array.isArray(data) ? (
+                <Link
+                  key={data[0]}
+                  data={data}
+                  skin={skin}
+                  onClick={() => isMobileView && setShow(false)}
+                />
+              ) : (
+                <div key={`group-${i}`} className="wx-demos group-title">
+                  {data.group}
+                </div>
+              ),
+            )}
           </div>
         </div>
       </div>
