@@ -1,3 +1,7 @@
+## 2.6.1
+
+- Using React Core v2.6.1
+
 ## 2.6.0
 
 ### Fixes
